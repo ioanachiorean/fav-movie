@@ -12,6 +12,10 @@ import { FavoriteChangedEventArgs } from './fav-button/fav-button.component';
 })
 
 export class AppComponent {
+  viewMode= 'map'; 
+
+  test = 123;
+
   title = 'project-Z';
 
   post = {
