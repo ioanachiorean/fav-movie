@@ -14,13 +14,19 @@ import { FavoriteChangedEventArgs } from './fav-button/fav-button.component';
 export class AppComponent {
   viewMode= 'map'; 
 
-  test = 123;
+  courses =[
+    { id: 1, name: 'course1' },
+    { id: 2, name: 'course2' },
+    { id: 3, name: 'course3' },
+  ];
 
   title = 'project-Z';
 
   post = {
     isClicked: true,
   };
+  
+  
 
   onFavoriteChanged(eventArgs: FavoriteChangedEventArgs) {
     console.log('Favorite changed: ', eventArgs);
