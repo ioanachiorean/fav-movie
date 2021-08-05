@@ -1,0 +1,13 @@
+.icon{
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    padding: 20px;
+}
+
+.glyphicon{
+    font-size:40px;
+    color:lightblue;
+    text-align:right;
+    
+}

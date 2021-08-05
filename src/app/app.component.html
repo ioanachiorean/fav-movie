@@ -1,0 +1,35 @@
+<div class="header">
+  <h3>Moviebook</h3>
+</div>
+
+<div class="heading">
+  <h1>Choose your favorite movie!</h1>
+</div>
+
+<div class="input-field">
+  <input />
+</div>
+
+<div class="movie-cards">
+  <table class="center">
+    <tr>
+      <td id="picture1" style="background-color: #abb5be"></td>
+      <td id="picture2" style="background-color: #061522"></td>
+      <td id="picture3" style="background-color: #1c86e5"></td>
+    </tr>
+    <tr>
+      <td>
+        <h2>#1</h2>
+        <fav-button></fav-button>
+      </td>
+      <td>
+        <h2>#2</h2>
+        <fav-button [is-favorite]="post.isClicked" (change)="onFavoriteChanged($event)" ></fav-button>
+      </td>
+      <td>
+        <h2>#3</h2>
+        <fav-button></fav-button>
+      </td>
+    </tr>
+  </table>
+</div>
