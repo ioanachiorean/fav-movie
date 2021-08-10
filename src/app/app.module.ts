@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FavButtonComponent } from './fav-button/fav-button.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { NavPillsComponent } from './nav-pills/nav-pills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FavButtonComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    NavPillsComponent
 
   ],
   imports: [
