@@ -10,6 +10,8 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
 import { NavPillsComponent } from './nav-pills/nav-pills.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { PostComponentComponent } from './post-component/post-component.component';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     SignupFormComponent,
     NavPillsComponent,
     NewCourseFormComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    PostComponentComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]
