@@ -25,18 +25,6 @@ export class PasswordValidators {
     });
  }
 
-   //  SHOULD MATCH THE OLD PASSWORD
-//  static shouldMatchTheNewPassword (control:AbstractControl) : Promise < ValidationErrors | null>{
-//    return new Promise((resolve, reject) => {
-//    setTimeout(() => { 
-      
-//          if((control.value as string) === ChangePasswordComponent.value.newPassword)
-//             resolve ({ shouldMatchTheNewPassword: true }) ;
-//          else 
-//             resolve (null);
-//    },2000);
-   
-// });
 
 }
 
@@ -44,4 +32,4 @@ export class PasswordValidators {
 
 
 
-}
+
