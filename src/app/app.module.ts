@@ -9,6 +9,7 @@ import { FavButtonComponent } from './fav-button/fav-button.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { NavPillsComponent } from './nav-pills/nav-pills.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
     FavButtonComponent,
     SignupFormComponent,
     NavPillsComponent,
-    NewCourseFormComponent
+    NewCourseFormComponent,
+    ChangePasswordComponent
 
   ],
   imports: [
