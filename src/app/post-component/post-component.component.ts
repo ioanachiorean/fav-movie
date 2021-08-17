@@ -27,8 +27,8 @@ export class PostComponentComponent implements OnInit {
   createPost(input: HTMLInputElement) {
     let post: any ={ title: input.value };
     input.value = '';
-
-    this.http.post(this.url, JSON.stringify(post))
+  
+    this.service.createPostService(post)
       .subscribe((response: any) => {
         post.id = response.id;
         this.post.splice(0, 0 , post);
@@ -36,20 +36,20 @@ export class PostComponentComponent implements OnInit {
 
   }
 
-  updatePost(post: any){
-    this.http.patch(this.url + '/' + post.id, JSON.stringify({ isRead : true }))
-    .subscribe(response =>{
-      console.log(response);
-    })
-
-  }
-
-  deletePost(post: any){
-    this.http.delete(this.url + '/' + post.id)
+    deletePost(post: any){
+    this.service.deletePostService(post)
     .subscribe(response=> {
       let index = this.post.indexOf(post);
       this.post.splice(index, 1);
 
     })
   }
+  
+  // updatePost(post: any){
+  //   this.http.patch(this.url + '/' + post.id, JSON.stringify({ isRead : true }))
+  //   .subscribe(response =>{
+  //     console.log(response);
+  //   })
+
+  // }
 }
