@@ -1,1 +1,14 @@
-<p>post-component works!</p>
+<input 
+    (keyup.enter)="createPost(input)" #input
+    type="text" class="form-control">
+
+<ul class="list-group">
+    <li 
+    *ngFor= "let post of post"
+    class="list-group-item">
+        <button 
+        (click)= "updatePost(post)"
+        class="btn btn-default btn-sml">Delete</button>
+    {{ post.title }}
+    </li>
+</ul>

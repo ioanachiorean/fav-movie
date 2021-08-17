@@ -11,7 +11,7 @@ import { NavPillsComponent } from './nav-pills/nav-pills.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PostComponentComponent } from './post-component/post-component.component';
-import { HttpClient } from '@angular/common/http';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { HttpClient } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
