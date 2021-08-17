@@ -12,6 +12,7 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PostComponentComponent } from './post-component/post-component.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { PostService } from './post.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import {  HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ PostService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
