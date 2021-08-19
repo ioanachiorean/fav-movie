@@ -12,7 +12,7 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PostComponentComponent } from './post-component/post-component.component';
 import {  HttpClientModule } from '@angular/common/http';
-import { PostService } from './post.service';
+import { PostService } from './post-component/services/post.service';
 
 @NgModule({
   declarations: [
